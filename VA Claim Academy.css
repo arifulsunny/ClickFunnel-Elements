@@ -1,0 +1,821 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;500&family=Montserrat:wght@100;800&display=swap');
+
+--------------------------------
+
+--------------------------------
+/* Container row setup */
+#row--11872-150 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+/* Animate the text inside */
+#row--11872-150 .el-text {
+  display: inline-block;
+  padding: 0 40px; /* spacing between items */
+  font-size: 20px; /* adjust as needed */
+  font-weight: 600;
+  color: #111;
+  animation: marquee 25s linear infinite;
+}
+
+/* Duplicate the content for seamless loop */
+#row--11872-150 .el-text::after {
+  content: attr(data-text);
+  padding-left: 80px; /* gap between original and duplicate */
+}
+
+/* Keyframes for smooth infinite scroll */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+------------
+
+/* Parent container must be relative */
+#section--88025 {
+  position: relative;
+}
+
+/* Review Grid Image Absolute Position*/
+#img-10876,
+#tmp_image-49158{
+  	position: absolute;    /* absolute positioning relative to parent */
+    bottom: 0;            /* stick to the bottom */
+    right: 0;             /* stick to the right */
+    /* optional styling */
+    margin-right: 15px;         /* space from edges if needed */
+    z-index: 10;          /* make sure it’s on top */
+}
+
+/* Review Grid Section */
+#section--88025 {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;
+  max-width: 1400px;         /* max width limit */
+  margin: auto;            /* center horizontally in page */
+  height: auto;              /* hug content height */
+  box-sizing: border-box;
+}
+
+/* Logo Slider */
+#tmp_customjs-70372{
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+/* Under Video Banner */
+#row--49750{
+    display: flex;
+    align-items: center;      /* optional: vertical centering */
+}
+
+/* Testimonial 1 */
+#section--87204 {
+    height: 293px;       /* fixed height */
+    box-sizing: border-box;
+}
+
+/* Hero Background-Image Animation */
+#section-5894910000 {
+  margin: 0;
+  padding: 0;
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  position: relative; /* Make it a reference frame */
+  overflow: hidden;           /* optional: hide scrollbars */
+}
+
+/* Create a background layer inside the container */
+#section-5894910000::before {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background-image: url('https://images.clickfunnels.com/1b/3057d6bbf34dd3a6e91a6a60c39ce3/hero-section-bg-flag.png');
+  background-size: cover;
+  background-position: center;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  z-index: -1; /* Keeps it behind your content */
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-45px, -40px); /* top-left */
+  }
+  50% {
+    transform: translate(0, 0);          /* center */
+  }
+  75% {
+    transform: translate(35px, -40px);  /* top-right */
+  }
+  100% {
+    transform: translate(0, 0);          /* center */
+  }
+}
+
+/* Testimonial 1 Background-Image Animation */
+#section--87204 {
+  margin: 0;
+  padding: 0;
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  position: relative; /* Make it a reference frame */
+  overflow: hidden;           /* optional: hide scrollbars */
+}
+
+/* Create a background layer inside the container */
+#section--87204::before {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 120%;
+  height: 120%;
+  background-image: url('https://images.clickfunnels.com/1b/3057d6bbf34dd3a6e91a6a60c39ce3/hero-section-bg-flag.png');
+  background-size: cover;
+  background-position: center;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  z-index: -1; /* Keeps it behind your content */
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-45px, -40px); /* top-left */
+  }
+  50% {
+    transform: translate(0, 0);          /* center */
+  }
+  75% {
+    transform: translate(35px, -40px);  /* top-right */
+  }
+  100% {
+    transform: translate(0, 0);          /* center */
+  }
+}
+
+/* Testimonial 2 */
+#container-72893 {
+    height: 236px;       /* fixed height */
+    box-sizing: border-box;
+}
+
+/* Money Back Gurantee Background-Image Animation */
+#section--81300 {
+  margin: 0;
+  padding: 0;
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  position: relative; /* Make it a reference frame */
+  overflow: hidden;           /* optional: hide scrollbars */
+}
+
+/* Create a background layer inside the container */
+#section--81300::before {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 120%;
+  height: 120%;
+  background-image: url('https://images.clickfunnels.com/1b/3057d6bbf34dd3a6e91a6a60c39ce3/hero-section-bg-flag.png');
+  background-size: cover;
+  background-position: center;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  z-index: -1; /* Keeps it behind your content */
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-45px, -40px); /* top-left */
+  }
+  50% {
+    transform: translate(0, 0);          /* center */
+  }
+  75% {
+    transform: translate(35px, -40px);  /* top-right */
+  }
+  100% {
+    transform: translate(0, 0);          /* center */
+  }
+}
+
+/* Final CTA Background-Image Animation */
+#section--39425 {
+  margin: 0;
+  padding: 0;
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  position: relative; /* Make it a reference frame */
+  overflow: hidden;           /* optional: hide scrollbars */
+}
+
+/* Create a background layer inside the container */
+#section--39425::before {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 120%;
+  height: 120%;
+  background-image: url('https://images.clickfunnels.com/1b/3057d6bbf34dd3a6e91a6a60c39ce3/hero-section-bg-flag.png');
+  background-size: cover;
+  background-position: center;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  z-index: -1; /* Keeps it behind your content */
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-45px, -40px); /* top-left */
+  }
+  50% {
+    transform: translate(0, 0);          /* center */
+  }
+  75% {
+    transform: translate(35px, -40px);  /* top-right */
+  }
+  100% {
+    transform: translate(0, 0);          /* center */
+  }
+}
+
+/* Navigation */
+#row--29382 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* optional – keeps content vertically aligned */
+}
+
+/* Underline effect for headings */
+#tmp_headline1-73432 {
+  position: relative;
+}
+
+#tmp_headline1-73432:after {
+  content: '';
+  position: absolute;
+  bottom: -0.2em; /* adjust distance below text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;  /* image width */
+  height: 14px;  /* image height */
+  background: url('https://images.clickfunnels.com/9d/653946d538407e9a5b943f30048865/underline-yellow-1.png')
+              no-repeat center bottom;
+  background-size: contain;
+  z-index: -1; /* sits behind text */
+}
+
+/* Video Border */
+#tmp_video-44100 {
+  box-sizing: border-box;        /* includes border + padding in total width/height */
+  border: 8px solid #ffffff;     /* adjust thickness & color */
+  border-radius: 4px;            /* optional: rounded corners */
+}
+
+/* Illustration Absolute Position*/
+#row--19682{
+  	position: absolute;   /* absolute positioning relative to parent */
+    bottom: 0;            /* stick to the bottom */
+    right: 0;             /* stick to the right */
+    /* optional styling */
+    margin: 0;         /* space from edges if needed */
+    z-index: 10;          /* make sure it’s on top */
+}
+
+
+
+/* Main Headlines */
+h1, h2, h3,
+.headline, .elHeadline {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Subheadlines */
+h4, h5, h6,
+.subheadline, .elSubHeadline {
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Individual Card */
+.feature-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* Icon */
+.feature-card .icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+
+/* Body text, buttons, links, inputs */
+ p, span, a, li, .elParagraph, .elButton, .elInput {
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+#tmp_headline1-73432 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+#tmp_subheadline-68897{
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.4rem !important;
+}
+
+#headline-29689{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 100 !important;
+
+}
+
+#headline-96954{
+  position: relative;
+  z-index: 2;
+  margin: -20px;
+}
+
+#row--65798 {
+  position: relative;
+  z-index: 0;
+  margin: -20px;
+}
+
+#headline-57536{
+  font-weight: 100 !important;
+}
+
+#tmp_image-75918 {
+  margin-top: -70px !important;
+}
+
+#section--14133 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--14133 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--14133 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#tmp_image-73482{
+  margin-top: -70px !important;
+}
+
+#headline-56115{
+  font-weight: 400 !important;
+}
+
+#section--48739 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--48739 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--48739 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#section--88025 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--88025 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--88025 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#section--86501 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--86501 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--86501 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* Container sizing — adjust as needed */
+#cf-swiper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  --cf-radius: 16px;
+  --cf-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* Slide visuals */
+#cf-swiper .swiper-slide {
+  transition: transform .35s ease, opacity .35s ease, box-shadow .35s ease;
+  transform: scale(.96);
+  opacity: .85;
+}
+#cf-swiper .swiper-slide img,
+#cf-swiper .swiper-slide video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--cf-radius);
+  box-shadow: var(--cf-shadow);
+}
+
+/* Emphasize active slide */
+#cf-swiper .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Pagination bullets */
+#cf-swiper .swiper-pagination-bullet {
+  width: 8px; height: 8px; opacity: .5;
+}
+#cf-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Nav arrows */
+#cf-swiper .swiper-button-prev,
+#cf-swiper .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  backdrop-filter: blur(6px);
+  background: rgba(0,0,0,.35);
+  border-radius: 999px;
+  transition: transform .2s ease, background .2s ease;
+}
+#cf-swiper .swiper-button-prev:hover,
+#cf-swiper .swiper-button-next:hover {
+  transform: scale(1.06);
+  background: rgba(0,0,0,.55);
+}
+#cf-swiper .swiper-button-prev::after,
+#cf-swiper .swiper-button-next::after {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Scrollbar */
+#cf-swiper .swiper-scrollbar {
+  background: rgba(255,255,255,.1);
+  height: 4px;
+  border-radius: 999px;
+  margin-top: 8px;
+}
+#cf-swiper .swiper-scrollbar-drag {
+  background: rgba(255,255,255,.5);
+}
+
+/* Dark backgrounds play nice */
+body, .section, .row, .container {
+  /* no changes required; CF uses its own */
+}
+
+#row--12347 .col-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#row--12347 [id^='headline-']{
+  align-self:flex-start !important;
+  text-align:left !important;
+}
+
+/* Subtle drift using background-position */
+#section--87204{
+  background-size: 112% auto !important;    /* a little zoom-in prevents edges */
+  background-position: 50% 50%;
+  animation: panFlag 18s ease-in-out infinite alternate;
+  will-change: background-position;
+}
+
+@keyframes panFlag{
+  0%   { background-position: 50% 50%; }
+  40%  { background-position: 48.8% 51.0%; }
+  70%  { background-position: 52.3% 49.1%; }
+  100% { background-position: 50% 50%; }
+}
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  #section--87204{ animation: none !important; }
+}
+
+#section--87204 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--87204 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--87204 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#col-center-left-106 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: left;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#row--20902. col-inner {
+  min-height: 320;
+}
+
+#row--10276 .col-inner{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center 
+}
+
+#section--54281 {
+  background-image: url('your-image-url.png');
+  background-repeat: no-repeat;
+  background-position: right center; /* sticks image to the right */
+  background-size: auto; /* or contain / cover depending on effect */
+}
+
+#headline-77055{
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+#section--27558 .containerInner{
+  width: 100% !important;
+  max-width: 100%;
+}
+#section--34660 .containerInner{
+  width: 100% !important;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#row--60639 .col-inner{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center 
+}
+
+#section-5894910000 .containerInner{
+  width: 100% !important;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#col-right-121 .col-inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#col-full-130 .col-inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  100% { transform: translateX(0); }
+  0% { transform: translateX(50%); } /* shift by half since duplicated */
+}
+
+#col-full-147 .col-inner{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll-right 40s linear infinite;
+}
+
+@keyframes scroll-right {
+  200% { transform: translateX(0); }
+  0% { transform: translateX(-50%); } /* shift by half since duplicated */
+}
+
+#col-left-136 .col-inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-right-137 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-left-136-131 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-right-137-102 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-full-127 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+<!-- ===== Script (paste once per page; works in ClickFunnels/Kajabi) ===== -->
+  .faq-accordion { max-width: 900px; margin: 0 auto; }
+  .faq-item { border-top: 1px solid #ccc; }
+  .faq-item:last-child { border-bottom: 1px solid #ccc; }
+
+  .faq-trigger {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 0;
+    background: none;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: left;
+  }
+  .faq-trigger .chev { transition: transform .25s ease; }
+  .faq-trigger[aria-expanded='true'] .chev { transform: rotate(180deg); }
+
+  .faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+  }
+  .faq-panel p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #374151;
+  }
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Individual Card */
+.feature-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* Icon + Headline Group */
+.feature-card .icon-headline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.feature-card .icon-headline h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0;
+}
