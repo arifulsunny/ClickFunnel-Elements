@@ -1,53 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Reviews</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            padding: 40px 20px;
-        }
-
+<style>
         .reviews-section {
-            max-width: 1400px;
+            max-width: 100%;
             margin: 0 auto;
             position: relative;
+            padding: 0 20px;
         }
-
         .reviews-container {
             position: relative;
             overflow: hidden;
             transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
         .reviews-container.collapsed {
             max-height: 600px;
         }
-
         .reviews-container.semi-expanded {
             max-height: 1200px;
         }
-
         .reviews-container.fully-expanded {
-            max-height: none;
+            max-height: 5000px;
         }
-
         .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             padding-bottom: 20px;
         }
-
         .review-card {
             background: white;
             border-radius: 12px;
@@ -58,19 +35,18 @@
             gap: 16px;
             transition: all 0.3s ease;
             cursor: default;
+            flex: 1 1 280px;
+            max-width: 400px;
         }
-
         .review-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
         }
-
         .review-header {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         .user-avatar {
             width: 48px;
             height: 48px;
@@ -83,66 +59,60 @@
             color: white;
             flex-shrink: 0;
         }
-
         .user-avatar img {
             width: 100%;
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
         }
-
         .user-info {
             flex: 1;
         }
-
         .user-name {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 15px;
             color: #1a1a1a;
             margin-bottom: 4px;
         }
-
         .review-meta {
             display: flex;
             align-items: center;
             gap: 8px;
             font-size: 13px;
         }
-
         .stars {
             color: #fbbf24;
             letter-spacing: 2px;
         }
-
         .review-date {
             color: #666;
         }
-
         .review-title {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 16px;
             color: #1a1a1a;
             line-height: 1.4;
         }
-
         .review-content {
             color: #4a4a4a;
             font-size: 14px;
             line-height: 1.6;
             position: relative;
-        }
-
-        .review-text {
-            display: block;
-        }
-
-        .review-text.truncated {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
             overflow: hidden;
         }
-
+        .review-text {
+            display: block;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        .review-text.truncated {
+            max-height: 4.8em;
+        }
+        .review-text.expanded {
+            max-height: 1000px;
+        }
         .view-more {
             color: #3b82f6;
             font-weight: 500;
@@ -152,15 +122,12 @@
             display: inline-block;
             margin-top: 4px;
         }
-
         .view-more:hover {
             text-decoration: underline;
         }
-
         .section-wrapper {
             position: relative;
         }
-
         .gradient-overlay {
             position: absolute;
             bottom: 0;
@@ -172,11 +139,9 @@
             transition: opacity 0.3s ease;
             z-index: 5;
         }
-
         .gradient-overlay.hidden {
             opacity: 0;
         }
-
         .expand-button {
             position: relative;
             width: 56px;
@@ -193,28 +158,24 @@
             z-index: 10;
             margin: 40px auto 0;
         }
-
         .expand-button:hover {
             transform: translateY(-4px);
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
-
         .expand-button svg {
             width: 24px;
             height: 24px;
             transition: transform 0.3s ease;
         }
-
         .expand-button.hidden {
             display: none;
         }
-
         .cta-section {
             text-align: center;
             margin-top: 40px;
         }
-
         .schedule-button {
+            font-family: 'Montserrat', sans-serif;
             background: #991b1b;
             color: white;
             border: none;
@@ -227,12 +188,11 @@
             letter-spacing: 1px;
             transition: background 0.3s ease;
         }
-
         .schedule-button:hover {
             background: #7f1d1d;
         }
-
         .rating-badge {
+            font-family: 'Montserrat', sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -241,38 +201,35 @@
             font-size: 32px;
             font-weight: 700;
         }
-
         .rating-badge .stars-badge {
             color: #fbbf24;
         }
-
         .google-logo {
             height: 24px;
             margin-left: 8px;
         }
-
         @media (max-width: 768px) {
             .reviews-grid {
-                grid-template-columns: 1fr;
+                flex-direction: column;
             }
-
+            .review-card {
+                max-width: 100%;
+            }
             .reviews-container.collapsed {
                 max-height: 800px;
             }
-
             .reviews-container.semi-expanded {
                 max-height: 1600px;
             }
         }
     </style>
-</head>
-<body>
+
+
     <div class="reviews-section">
         <div class="section-wrapper">
             <div class="reviews-container collapsed" id="reviewsContainer">
                 <div class="reviews-grid" id="reviewsGrid"></div>
             </div>
-            
             <div class="gradient-overlay" id="gradientOverlay"></div>
         </div>
         
@@ -295,44 +252,44 @@
     <script>
         const reviews = [
             {
-                name: "Shaun W.",
-                avatar: "S",
+                name: "Balsis Dale",
+                avatar: "B",
                 color: "#06b6d4",
-                date: "Apr 20, 2024",
+                date: "4/28/2023",
                 rating: 5,
                 title: "Thanks Jordan! 5 Stars!!",
-                content: "Jordan did an excellent job helping me with my paperwork! He is a fellow Veteran and genuine person to why wants to help you...",
-                fullContent: "Jordan did an excellent job helping me with my paperwork! He is a fellow Veteran and genuine person to why wants to help you achieve your goals. I highly recommend VA Claims Academy!"
+                content: "Just got my decision letter from the VA after filing. If it wasn't for the videos here and the C&P prep zoom call with...",
+                fullContent: "Just got my decision letter from the VA after filing. If it wasn't for the videos here and the C&P prep zoom call with Jordan, I honestly don't think I would have gotten the 100% rating I got. Being able to communicate your conditions to your examiner with respect to the CFR is critical, such as only conducting the movements during the assessment to the point you begin to feel pain. Moving past your pain threshold doesn't portray an accurate picture of your disability and how it affects your daily life. I felt I didn't have an accurate mental health assessment with the psychologist, but my other claims were able to get me to 100. Take advantage of writing personal statements for EACH claim, know the CFR rating schedules, review the DBQs for your claim, and don't get discouraged if you have a bad exam; never give up! #ChessNotCheckers - Big mahalo Jordan for creating this space for us to share and support each other!"
             },
             {
-                name: "Eli B.",
-                avatar: "E",
+                name: "Sorto William",
+                avatarImage: "https://i.pravatar.cc/150?img=12",
                 color: "#8b5cf6",
-                date: "Apr 20, 2024",
+                date: "10/25/2024",
                 rating: 5,
-                title: "Jordan is the BEST it gets. Reach out to Jordan and see for your self.",
-                content: "Jordan is THE source for all of your VA Claims related questions. The information he provides is thorough, concise, accurate and...",
-                fullContent: "Jordan is THE source for all of your VA Claims related questions. The information he provides is thorough, concise, accurate and always up to date with the latest policies and procedures."
+                title: "Journey is over! 100% P&T!",
+                content: "Thank you to everyone on here, to Jordan and the The Board Room | VACA! To other YouTube channels as well, this is the best news...",
+                fullContent: "Thank you to everyone on here, to Jordan and the The Board Room | VACA! To other YouTube channels as well, this is the best news. Everyone keep fighting, it took a little over a year with 3-4 supplemental claims, 2 HLrs and over 15 C&P exams but I didn't give up because I know I deserve it just like we all do."
             },
             {
-                name: "Sarah and Dave Lees",
-                avatar: "S",
+                name: "Effang Akanimo",
+                avatar: "E",
                 color: "#10b981",
-                date: "Apr 20, 2024",
+                date: "3/1/2025",
                 rating: 5,
                 title: "I Really Appreciate The Honesty And Helpfulness!",
-                content: "Jordan of VA Claims Academy took time to talk with me about an issue that we were having with our VA claim. He was honest, and...",
-                fullContent: "Jordan of VA Claims Academy took time to talk with me about an issue that we were having with our VA claim. He was honest, and provided excellent guidance that helped us understand the process better."
+                content: "If I could do a backflip, I would! Thanks to Jordan and his team for helping me get over that 90% hump. Couldn't...",
+                fullContent: "If I could do a backflip, I would! Thanks to Jordan and his team for helping me get over that 90% hump. Couldn't have done it without them and to everyone else, keep fighting the good fight! (Image of 100% rating)."
             },
             {
-                name: "Jimmy",
-                avatar: "J",
+                name: "Argott Bryan",
+                avatarImage: "https://i.pravatar.cc/150?img=33",
                 color: "#f59e0b",
                 date: "Apr 20, 2024",
                 rating: 5,
                 title: "It's Worth Every Penny",
-                content: "Do not listen to what they say about VACA. It's very helpful. It helped me with understanding so I can get the balance I been...",
-                fullContent: "Do not listen to what they say about VACA. It's very helpful. It helped me with understanding so I can get the balance I been looking for. The community is supportive and the resources are invaluable."
+                content: "I have to give Jordan, staff, and all the fantastic people in here credit to this. I woke up the other morning unexpectedly...",
+                fullContent: "I have to give Jordan, staff, and all the fantastic people in here credit to this. I woke up the other morning unexpectedly seeing this and I couldn't believe it. I went from 10% to 100%, the waiting game took 14 months. It's here and It still really hasn't hit. Not sure when the back pay will hit or what to do next. Thank you everybody! This is life changing for my family."
             },
             {
                 name: "Miraz S.",
@@ -346,7 +303,7 @@
             },
             {
                 name: "Aaron N.",
-                avatar: "A",
+                avatarImage: "https://i.pravatar.cc/150?img=51",
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -366,7 +323,7 @@
             },
             {
                 name: "Kenneth H.",
-                avatar: "K",
+                avatarImage: "https://i.pravatar.cc/150?img=68",
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -386,7 +343,7 @@
             },
             {
                 name: "Roger W.",
-                avatar: "R",
+                avatarImage: "https://i.pravatar.cc/150?img=15",
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -406,7 +363,7 @@
             },
             {
                 name: "Kyle B.",
-                avatar: "K",
+                avatarImage: "https://i.pravatar.cc/150?img=59",
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -426,7 +383,7 @@
             },
             {
                 name: "Roger W.",
-                avatar: "R",
+                avatarImage: "https://i.pravatar.cc/150?img=60",
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -446,7 +403,7 @@
             },
             {
                 name: "Steve V.",
-                avatar: "S",
+                avatarImage: "https://i.pravatar.cc/150?img=70",
                 color: "#f59e0b",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -460,20 +417,30 @@
         const expandButton = document.getElementById('expandButton');
         const reviewsContainer = document.getElementById('reviewsContainer');
         const gradientOverlay = document.getElementById('gradientOverlay');
-
+        
         let expandState = 0; // 0: collapsed, 1: semi-expanded, 2: fully-expanded
 
         // Render reviews
         reviews.forEach((review, index) => {
             const card = document.createElement('div');
             card.className = 'review-card';
-            
             const stars = '★'.repeat(review.rating);
+            
+            // Determine avatar content
+            let avatarContent;
+            if (review.avatarImage) {
+                avatarContent = `<img src="${review.avatarImage}" alt="${review.name}">`;
+            } else if (review.avatar) {
+                avatarContent = review.avatar;
+            } else {
+                // Fallback to first letter of name
+                avatarContent = review.name.charAt(0);
+            }
             
             card.innerHTML = `
                 <div class="review-header">
                     <div class="user-avatar" style="background-color: ${review.color}">
-                        ${review.avatar}
+                        ${avatarContent}
                     </div>
                     <div class="user-info">
                         <div class="user-name">${review.name}</div>
@@ -489,7 +456,6 @@
                     <span class="view-more" data-index="${index}">View more</span>
                 </div>
             `;
-            
             reviewsGrid.appendChild(card);
         });
 
@@ -501,12 +467,14 @@
                 const viewMoreBtn = e.target;
                 
                 if (reviewText.classList.contains('truncated')) {
-                    reviewText.classList.remove('truncated');
                     reviewText.textContent = reviews[index].fullContent;
+                    reviewText.classList.remove('truncated');
+                    reviewText.classList.add('expanded');
                     viewMoreBtn.textContent = 'View less';
                 } else {
-                    reviewText.classList.add('truncated');
                     reviewText.textContent = reviews[index].content;
+                    reviewText.classList.remove('expanded');
+                    reviewText.classList.add('truncated');
                     viewMoreBtn.textContent = 'View more';
                 }
             }
@@ -527,5 +495,3 @@
             }
         });
     </script>
-</body>
-</html>

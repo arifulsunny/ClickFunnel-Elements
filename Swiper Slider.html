@@ -1,0 +1,190 @@
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+<style>
+    .slider-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0 !important;
+        position: relative;
+    }
+    .swiper {
+        width: 100%;
+        overflow: visible !important;
+        padding: 0 60px 50px 60px;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        display: block;
+    }
+    /* Custom Arrow Buttons */
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        background-color: #ffffff;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
+    }
+    .swiper-button-prev {
+        left: 10px;
+    }
+    .swiper-button-next {
+        right: 10px;
+    }
+    /* Custom Pagination Dots */
+    .swiper-pagination {
+        bottom: -35px !important;
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #d1d5db;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    .swiper-pagination-bullet:hover {
+        background-color: #9ca3af;
+        transform: scale(1.15);
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #80030D;
+        width: 14px;
+        height: 14px;
+    }
+    /* Mobile Styles */
+    @media (max-width: 767px) {
+        .slider-container {
+            padding: 20px 0 !important;
+        }
+        .swiper {
+            padding: 0 50px 40px 50px;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+        }
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 16px;
+        }
+        .swiper-button-prev {
+            left: 5px;
+        }
+        .swiper-button-next {
+            right: 5px;
+        }
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+        }
+        .swiper-pagination-bullet-active {
+            width: 12px;
+            height: 12px;
+        }
+    }
+</style>
+<div class="slider-container">
+    <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://images.clickfunnels.com/1a/0b5574f2464a56b6eba587bc5429f5/N_Alley.png"
+                     alt="Testimonial 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.clickfunnels.com/14/81047d04704b1ea672e45fd199f7ce/Jeff_Morgan.png"
+                     alt="Testimonial 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.clickfunnels.com/94/9197ac30f442f3ac5a90a548c14901/Review.png"
+                     alt="Testimonial 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.clickfunnels.com/ce/7e439b3b07422ba53a570c44624792/Aaron_Nichols.png"
+                     alt="Testimonial 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.clickfunnels.com/cd/0a3eed93fe448cbae836755b483003/Atterrest_Chappell.png"
+                     alt="Testimonial 5">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.clickfunnels.com/6a/f742066e314b9391de137ae708d6ba/Review2.png"
+                     alt="Testimonial 6">
+            </div>
+        </div>
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script>
+    (function () {
+        function initSwiper() {
+            // Check if Swiper is loaded
+            if (typeof Swiper === 'undefined') {
+                setTimeout(initSwiper, 100);
+                return;
+            }
+            const swiper = new Swiper('.testimonial-swiper', {
+                // Slides settings
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                // Autoplay
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                // Speed
+                speed: 500,
+                // Pagination dots
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                // Responsive breakpoints
+                breakpoints: {
+                    // When window width is >= 768px
+                    768: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 40,
+                    }
+                },
+                // Touch/Drag settings
+                grabCursor: true,
+                touchRatio: 1,
+                touchAngle: 45,
+                simulateTouch: true,
+            });
+        }
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSwiper);
+        } else {
+            initSwiper();
+        }
+    })();
+</script>

@@ -1,0 +1,223 @@
+<style>
+    .faq-accordion {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 8px;
+    }
+    
+    .faq-item h3 {
+      margin: 0;
+    }
+    
+    .faq-trigger {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+    }
+    
+    .faq-trigger:hover {
+      color: #4f46e5;
+    }
+    
+    .chev {
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+      margin-left: 12px;
+    }
+    
+    .faq-trigger[aria-expanded="true"] .chev {
+      transform: rotate(180deg);
+    }
+    
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .faq-panel p {
+      padding: 0 0 16px 0;
+      margin: 0;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+  </style>
+
+
+<!-- ===== Accordion (drop this whole block in your HTML) ===== -->
+<section id="section-FAQ" class="faq-accordion">
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>How is this different from other VA claims services?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>Most firms do the filing for you—and charge a slice of your back-pay forever. We're a done-with-you program: we show you every step, draft your nexus letters, review your evidence, and charge one flat fee. You keep 100% of your retro and monthly checks.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>Can I use the program if I'm already working with a VSO?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>Yes. Many members keep their VSO for final submission while using our training, templates, and expert letters to strengthen the file. Think of us as the intel team that preps your packet before the VSO hits.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>How long do VA claims usually take?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>The VA's clock varies by region and backlog. Our average member goes from "file-ready" to decision in 4–12 months. We can't control their queue, but we can make sure your claim arrives bullet-proof and avoids avoidable delays.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>Will this help me find more conditions to claim?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>Absolutely. The lessons teach you how to identify secondary and overlooked issues, then back them with the right medical evidence so each one counts toward your final rating.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>Is my personal information safe?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>Yes. We use HIPAA-compliant storage and military-grade encryption. Only the mentors working on your claim can view your records, and nothing is ever shared without your written consent—including positive reviews or success stories. Your privacy is protected at every step.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>What happens if I need more help?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>Lifetime access means exactly that. Post in the Board Room, open a support ticket, or schedule an extra strategy call—no additional fees.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>Do you help file VA claims?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>We guide, review, and prepare every document, but you submit the claim yourself on VA.gov. This keeps you in control and meets VA guidelines while still giving you expert backup.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <h3>
+      <button class="faq-trigger" aria-expanded="false">
+        <span>Will I have to pay extra when I get a higher rating?</span>
+        <!-- Chevron -->
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M6 9l6 6 6-6" stroke="#111827" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </h3>
+    <div class="faq-panel">
+      <p>Never. Your investment is a one-time payment—or five monthly installments—up front. Whether you jump to 30% or 100%, every penny of back-pay and future compensation stays in your pocket.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const root = document.getElementById('section-FAQ');
+  if (!root) return;
+  
+  const triggers = root.querySelectorAll('.faq-trigger');
+  
+  // Initialize: open first item by default
+  triggers.forEach((btn, i) => {
+    const panel = btn.parentElement.nextElementSibling;
+    if (i === 0) {
+      btn.setAttribute('aria-expanded', 'true');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    } else {
+      btn.setAttribute('aria-expanded', 'false');
+      panel.style.maxHeight = '0';
+    }
+  });
+  
+  // Handle clicks
+  triggers.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      const panel = btn.parentElement.nextElementSibling;
+      
+      // Close all panels
+      triggers.forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        b.parentElement.nextElementSibling.style.maxHeight = '0';
+      });
+      
+      // Toggle clicked panel
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+})();
+</script>

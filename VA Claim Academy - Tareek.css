@@ -1,0 +1,348 @@
+[data-title='text-ticker'] .containerInner, [data-title='full-width'] .containerInner,[data-title*='testimonial-slider'] .containerInner, [data-title*='google-review'] .containerInner, #section--57641 .containerInner, #section--86160 .containerInner{
+	width: 100% ;
+}
+#section--43596 .containerInner{
+	width: 85% !important;
+}
+
+#headline-70680 .elHeadline b{
+	font-weight: 700;
+}
+
+
+
+[data-title='font-800'] .elHeadline b{
+	font-weight: 800 !important;
+}
+
+#headline-31950::after {
+    content: '';
+    position: absolute;
+    width: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: .5rem;
+    height: 5px;
+    background: #8c0000;
+  	max-width: 40em;
+}
+#section--43596, #section--60447{
+	overflow: visible !important;
+}
+#row--21994 {
+	box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.15);
+  	margin-top: -8rem !important;
+}
+
+[data-title*='slider-img-feature']{
+	width: 521px !important;
+  	padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+  	height: 22rem;
+}
+[data-title*='jacob']{
+	height: 15rem;
+}
+[data-title*='kyle']{
+	height: 17rem;
+}
+
+[data-title*='curtis']{
+	height: 26rem;
+}
+
+[data-title*='slider-img-feature'] .elScreenshot_image{
+	width : 15% !important;
+}
+[data-title*='slider-img-feature'] .elScreenshot_text{
+	width: 85% !important;
+}
+[data-title*='slider-img-feature'] .elScreenshot_text_padding{
+	padding-left: 0px !important;
+}
+
+[data-title*='slider-img-feature'] .elScreenshot_text_body{
+	position: absolute;
+  	top: 6rem;
+	padding: 15px;
+  	left: 1rem;
+  	
+}
+
+#customjs-27189{
+	margin-top: 0px !important;
+}
+.video-play-button{
+	margin-top: -28rem;
+}
+
+#section-1852710000-148 .containerInner{
+	width: 100% ;
+}
+
+/* bottom moving section */
+
+#section-1852710000-148{
+	overflow : hidden;
+  	position: relative;
+}
+#section--57941{
+	overflow: visible;
+}
+#img-19409{
+	position: absolute;
+    z-index: 1;
+    bottom: -32.7em;
+    right: 0;
+}
+
+/** Google Review CARD **/
+
+[data-title*='greview-card']{
+	padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+[data-title*='greview-container-row'] .innerContent{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+[data-title*='logo-container'], [data-title*='logo-container'] .col_left, [data-title*='logo-container'] .col_right, [data-title*='review-container'] .col_left{
+	padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+[data-title*='logo-container'] .col_left{
+	width: 20% !important;
+}
+[data-title*='logo-container'] .elImageWrapper{
+	text-align: left !important;
+	width: 48px !important;
+    height: 48px !important;
+}
+[data-title*='logo-container'] img{
+	background: darkturquoise;
+}
+
+[data-title*='review-container']{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+[data-title*='review-container'] .col-inner{
+	padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+[data-title*='headline-review'] .elHeadline{
+	font-size: 13px !important;
+}
+[data-title*='body-review']{
+	margin-top: 5px !important;
+}
+[data-title*='body-review'] .elHeadline{
+	font-size: 10px !important;
+}
+
+/** Mistakes Box **/
+
+[data-title*='mistakes-box'] .col-inner{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  	border-radius: 8px;
+  	padding: 20px 10px !important;
+  	background-color: #ffffff;
+}
+
+[data-title*='mistakes-box'] .icon-wrap{
+	text-align: center;
+}
+/** Gurantee BG **/
+#section--73055 {
+	background-image:
+  linear-gradient(90deg, rgba(0,11,56,.9), rgba(0,42,99,.9) 50%, rgba(70,21,54,.9)),
+  url('https://images.clickfunnels.com/6d/1a361d1c7a46559ce6bb313f95bfc3/gurantee-bg.png');
+    background-size: cover, cover;        /* or: auto for the image if needed */
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+
+}
+#customjs-22023 .text-black{
+	color: #ffffff !important;
+}
+
+#section--73055 [data-title*='button-main'] .elButton{
+	box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.28);
+}
+
+/** Bottom flag Section **/
+
+#section--54823{
+	background-image:
+    linear-gradient(to right, rgba(128, 3, 14, 0.9), rgba(0, 42, 99, 0.9)),
+    url('https://images.clickfunnels.com/a4/3de8917ab843f59e99d13bc3da7f23/flag-bg3.jpg');
+  background-position: center, center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+#section--54823 .text-black{
+	color: #ffffff !important;
+}
+
+#section--54823 [data-title*='button-main'] .elButton{
+    box-shadow: inset 4px 3px 4px 0px #ffffff80;
+  }
+
+@media (min-width: 1024px) {
+  	[data-title*='button-main'] .elButton{
+      width: 384px;
+      font-weight: 700 !important;
+      padding: 16px 40px !important;
+	}
+	#col-right-159 .col-inner{
+		padding: 0 30px !important;
+	}
+  	[data-title*='mistakes-box'] .col-inner{
+  		height: 22rem;
+  	}
+  #customjs-22023 .items-center{
+  	align-items: baseline !important;
+  }
+  #img-98098-189 {
+  	position: absolute;
+    top: -5.4rem;
+    right: 0;
+  }
+  
+  #section--54823 [data-title*='button-main'] .elButton{
+  	width: 50rem !important;
+    margin: 0px auto;
+    font-weight: 900 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+   
+  }
+  #col-center-136 {
+  	border-left: 2px solid #0a173b;
+    padding: 10px 0px;
+  }
+  #section-1852710000-148 {
+  	height: 31em;
+  }
+  	
+}
+/** MOBILE **/
+@media (max-width: 640px){
+  #col-left-121, #col-right-100{
+	max-width: 100% !important;
+	}
+  #col-left-166{
+  	margin-top: 20px !important;
+  }
+  #row--21994{
+  	margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  #row--76923{
+  	display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  [data-title*='testimonial-slider'] .containerInner{
+  	width: 90% !important;
+  }
+  [data-title*='slider-img-feature']{
+  	width: 340px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  [data-title*='slider-img-feature'] .elScreenshot_image{
+  	margin-top: 0px !important;
+  }
+  [data-title*='slider-img-feature'] .elScreenshot_text{
+  	margin-top: -5rem !important;
+    width: 60% !important;
+  }
+  #customjs-27189-111, #customjs-27189-128, #customjs-27189-107, #customjs-27189{
+  	margin-top: 0px !important;
+    margin-left: 5.5rem !important;
+  }
+  #tmp_featureimage-28466-158 {
+  	height: 24rem !important;
+  }
+  [data-title*='kyle']{
+  	height: 20rem !important;
+  }
+  #tmp_featureimage-28466{
+  	height: 26rem !important;
+  }
+  #featureimage-61465{
+  	height: 32rem !important;
+  }
+  [data-title*='slider-img-feature'] .elScreenshot_text_body{
+  	font-size: 15px !important;
+    text-align: left !important;
+  }
+  #img-98098{
+	bottom: -5rem !important;
+  }
+  #img-25272{
+  	bottom: -4em !important;
+  }
+  #img-98098 img{
+  	width: 100% !important;
+    height: 100% !important;
+  }
+  #col-right-158 {
+  	margin-top: 0px !important;
+  }
+  #headline-31950::after{
+  	width: 70% !important;
+    bottom: 0rem !important;
+  }
+  [data-title*='logo-container']{
+  	display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  [data-title*='mistakes-box'] .innerContent{
+  	margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+
+/** Max Width **/
+
+#row--97976 {
+	max-width: 800px !important;
+}
+[data-title*='card-row'] .innerContent{
+	max-width: 360px;
+  	margin: 0px auto !important;
+}
+[data-title*='cta-button']{
+	max-width: 385px !important;
+}
+#col-left-121, #col-right-100{
+	max-width: 380px;
+}
+#section--27555,#section--57641 .containerInner, [data-title='card-container'] .containerInner, [data-title='no-regrets-sec'] .containerInner{
+	max-width: 1800px;
+}
+#section--13452 .containerInner, #section--86033 .containerInner{
+	max-width: 1500px;
+}
+#row--21994{
+	max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#section-1852710000-148 .containerInner, #section--42008-159 .containerInner{
+	max-width: 1280px;
+}
