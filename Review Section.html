@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Reviews</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lexend+Deca:wght@400;500&display=swap" rel="stylesheet">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            padding: 40px 20px;
-        }
-
+<style>
         .reviews-section {
-            max-width: 1400px;
+            max-width: 100%;
             margin: 0 auto;
             position: relative;
+            padding: 0 20px;
         }
 
         .reviews-container {
@@ -38,12 +25,12 @@
         }
 
         .reviews-container.fully-expanded {
-            max-height: none;
+            max-height: 5000px;
         }
 
         .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             padding-bottom: 20px;
         }
@@ -58,6 +45,8 @@
             gap: 16px;
             transition: all 0.3s ease;
             cursor: default;
+            flex: 1 1 280px;
+            max-width: 400px;
         }
 
         .review-card:hover {
@@ -96,6 +85,7 @@
         }
 
         .user-name {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 15px;
             color: #1a1a1a;
@@ -119,6 +109,7 @@
         }
 
         .review-title {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 16px;
             color: #1a1a1a;
@@ -130,17 +121,21 @@
             font-size: 14px;
             line-height: 1.6;
             position: relative;
+            overflow: hidden;
         }
 
         .review-text {
             display: block;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
         }
 
         .review-text.truncated {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            max-height: 4.8em;
+        }
+
+        .review-text.expanded {
+            max-height: 1000px;
         }
 
         .view-more {
@@ -215,6 +210,7 @@
         }
 
         .schedule-button {
+            font-family: 'Montserrat', sans-serif;
             background: #991b1b;
             color: white;
             border: none;
@@ -233,6 +229,7 @@
         }
 
         .rating-badge {
+            font-family: 'Montserrat', sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -253,7 +250,11 @@
 
         @media (max-width: 768px) {
             .reviews-grid {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+
+            .review-card {
+                max-width: 100%;
             }
 
             .reviews-container.collapsed {
@@ -265,8 +266,7 @@
             }
         }
     </style>
-</head>
-<body>
+
     <div class="reviews-section">
         <div class="section-wrapper">
             <div class="reviews-container collapsed" id="reviewsContainer">
@@ -297,6 +297,7 @@
             {
                 name: "Shaun W.",
                 avatar: "S",
+                avatarImage: "https://example.com/avatars/shaun.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -307,6 +308,7 @@
             {
                 name: "Eli B.",
                 avatar: "E",
+                avatarImage: "https://example.com/avatars/eli.jpg", // Replace with actual image URL
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -317,6 +319,7 @@
             {
                 name: "Sarah and Dave Lees",
                 avatar: "S",
+                avatarImage: "https://example.com/avatars/sarah.jpg", // Replace with actual image URL
                 color: "#10b981",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -327,6 +330,7 @@
             {
                 name: "Jimmy",
                 avatar: "J",
+                avatarImage: "https://example.com/avatars/jimmy.jpg", // Replace with actual image URL
                 color: "#f59e0b",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -337,6 +341,7 @@
             {
                 name: "Miraz S.",
                 avatar: "M",
+                avatarImage: "https://example.com/avatars/miraz.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -347,6 +352,7 @@
             {
                 name: "Aaron N.",
                 avatar: "A",
+                avatarImage: "https://example.com/avatars/aaron.jpg", // Replace with actual image URL
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -357,6 +363,7 @@
             {
                 name: "Paul P.",
                 avatar: "P",
+                avatarImage: "https://example.com/avatars/paul.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -367,6 +374,7 @@
             {
                 name: "Kenneth H.",
                 avatar: "K",
+                avatarImage: "https://example.com/avatars/kenneth.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -377,6 +385,7 @@
             {
                 name: "Adam M.",
                 avatar: "A",
+                avatarImage: "https://example.com/avatars/adam.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -387,6 +396,7 @@
             {
                 name: "Roger W.",
                 avatar: "R",
+                avatarImage: "https://example.com/avatars/roger1.jpg", // Replace with actual image URL
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -397,6 +407,7 @@
             {
                 name: "Paul P.",
                 avatar: "P",
+                avatarImage: "https://example.com/avatars/paul2.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -407,6 +418,7 @@
             {
                 name: "Kyle B.",
                 avatar: "K",
+                avatarImage: "https://example.com/avatars/kyle.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -417,6 +429,7 @@
             {
                 name: "Perry B.",
                 avatar: "P",
+                avatarImage: "https://example.com/avatars/perry.jpg", // Replace with actual image URL
                 color: "#06b6d4",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -427,6 +440,7 @@
             {
                 name: "Roger W.",
                 avatar: "R",
+                avatarImage: "https://example.com/avatars/roger2.jpg", // Replace with actual image URL
                 color: "#8b5cf6",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -437,6 +451,7 @@
             {
                 name: "Charlotte",
                 avatar: "C",
+                avatarImage: "https://example.com/avatars/charlotte.jpg", // Replace with actual image URL
                 color: "#10b981",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -447,6 +462,7 @@
             {
                 name: "Steve V.",
                 avatar: "S",
+                avatarImage: "https://example.com/avatars/steve.jpg", // Replace with actual image URL
                 color: "#f59e0b",
                 date: "Apr 20, 2024",
                 rating: 5,
@@ -501,12 +517,14 @@
                 const viewMoreBtn = e.target;
                 
                 if (reviewText.classList.contains('truncated')) {
-                    reviewText.classList.remove('truncated');
                     reviewText.textContent = reviews[index].fullContent;
+                    reviewText.classList.remove('truncated');
+                    reviewText.classList.add('expanded');
                     viewMoreBtn.textContent = 'View less';
                 } else {
-                    reviewText.classList.add('truncated');
                     reviewText.textContent = reviews[index].content;
+                    reviewText.classList.remove('expanded');
+                    reviewText.classList.add('truncated');
                     viewMoreBtn.textContent = 'View more';
                 }
             }
@@ -527,5 +545,3 @@
             }
         });
     </script>
-</body>
-</html>
