@@ -1,0 +1,43 @@
+<div style="max-width:400px;margin:auto;padding:20px;border:1px solid #ddd;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);font-family:sans-serif;position:relative;">
+  
+  <!-- Top Section -->
+  <div style="display:flex;align-items:center;margin-bottom:12px;">
+    <img src="https://images.clickfunnels.com/d5/c7a69b8f0d4d258b6d67dcba3c05fd/Sonia-20Hilt-1.png" alt="User" style="width:50px;height:50px;border-radius:50%;margin-right:10px;">
+    <div>
+      <div style="font-weight:600;">John Doe</div>
+      <div style="font-size:13px;color:#777;">⭐️⭐️⭐️⭐️⭐️ • Sep 24, 2025</div>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Amazing Service!</div>
+
+  <!-- Review Text with See More -->
+  <div style="position:relative;">
+    <input type="checkbox" id="review-toggle-1" style="display:none;">
+    
+    <div class="review-text" style="font-size:14px;color:#444;line-height:1.5;max-height:60px;overflow:hidden;transition:max-height 0.4s ease;">
+      I had an amazing experience! The service was super professional and exceeded my expectations. The team went above and beyond to ensure I was satisfied. I would highly recommend this to anyone looking for quality and reliability. Definitely coming back again!
+    </div>
+
+    <!-- Label with no text inside -->
+    <label for="review-toggle-1" class="toggle-label" style="display:inline-block;margin-top:6px;font-size:14px;color:#007bff;cursor:pointer;"></label>
+  </div>
+
+  <style>
+    /* Expand review */
+    #review-toggle-1:checked ~ .review-text {
+      max-height: 500px !important;
+    }
+
+    /* Default label text */
+    .toggle-label::before {
+      content: "See more";
+    }
+
+    /* Change text when checked */
+    #review-toggle-1:checked ~ .toggle-label::before {
+      content: "See less";
+    }
+  </style>
+</div>

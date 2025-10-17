@@ -1,0 +1,970 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;500&family=Montserrat:wght@100;800&display=swap');
+--------------------------------
+
+--------------------------------
+/* Testimonial-1 Image Position */
+#section--89596{
+	overflow: visible;
+  	position: relative;
+}
+
+#tmp_image-40591{
+	position: absolute;
+    z-index: 1;
+    right: 0;
+}
+--------------------------------
+/* Testimonial-1 Background-Image Animation */
+#section--48333 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section--48333::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section--48333 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section--48333 {
+    height: auto;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section--48333::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}
+--------------------------------
+/* Testimonial-1 Mobile Background-Image Animation */
+#section--87204-156 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section--87204-156::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section--87204-156 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section--87204-156 {
+    height: auto;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section--87204-156::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}
+--------------------------------
+ /* Testimonial-2 Background-Image Animation */
+#section--48333 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section--48333::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section--48333 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section--48333 {
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section--48333::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}
+--------------------------------
+/* Texts Track Animation - Section BG */
+#row--88962-146{
+  	width: 100% !important;
+  	padding-left: 0px !important;
+ 	padding-right: 0px !important;
+}
+
+#section--14133-119-169{
+	width: 100% !important;
+  	padding-left: 0px !important;
+  	padding-right: 0px !important;
+}
+
+#section--14133-119-169 .containerInner{
+	width: 100% !important;
+  	padding-left: 0px !important;
+  	padding-right: 0px !important;
+}
+--------------------------------
+/* Testimonial-2 (Mobile) Background-Image Animation */
+#section--81300 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section--81300::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section--81300 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section--81300 {
+    height: auto;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section--81300::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}
+--------------------------------
+/* Testimonial-3 Background-Image Animation */
+#section--39425 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section--39425::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section--39425 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section--39425 {
+    height: auto;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section--39425::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}
+--------------------------------
+  /* Hero Background-Image Animation */
+#section-5894910000 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section-5894910000::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section-5894910000 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section-5894910000 {
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section-5894910000::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+--------------------------------
+/* As Seen On - Animation */
+@media (min-width: 768px) {
+  #section--14133-119 .containerInner {
+    width: 100% !important;
+    max-width: 100% !important
+  }
+}
+#section--14133-119 .containerInner {
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--14133-119 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--14133-119 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+--------------------------------
+
+  /* Illustration Absolute Position*/
+#row--19682, #tmp_image-22294{
+  position: absolute;   /* absolute positioning relative to parent */
+  bottom: 0;            /* stick to the bottom */
+  right: 0;             /* stick to the right */
+  /* optional styling */
+  margin: 0;         /* space from edges if needed */
+  z-index: 10;          /* make sure it’s on top */
+
+  width: 100%;          /* Scale to container width */
+  max-width: 518px;     /* Original width */
+  height: auto;         /* Maintain aspect ratio */
+  display: block;       /* Remove inline spacing */
+  margin: 0 auto;       /* Center horizontally */
+}
+--------------------------------
+  /* Container row setup */
+#row--11872-150 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+/* Parent container must be relative */
+#section--88025 {
+  position: relative;
+}
+
+/* Review Grid Image Absolute Position*/
+#img-10876,
+#tmp_image-49158{
+  position: absolute;    /* absolute positioning relative to parent */
+  bottom: 0;            /* stick to the bottom */
+  right: 0;             /* stick to the right */
+  /* optional styling */
+  margin-right: 15px;         /* space from edges if needed */
+  z-index: 10;          /* make sure it’s on top */
+}
+
+/* Review Grid Section */
+#section--88025 {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;
+  max-width: 1400px;         /* max width limit */
+  margin: auto;            /* center horizontally in page */
+  height: auto;              /* hug content height */
+  box-sizing: border-box;
+}
+
+/* Under Video Banner */
+#row--49750{
+  display: flex;
+  align-items: center;      /* optional: vertical centering */
+}
+
+/* Testimonial 1 */
+#section--87204 {
+  height: 293px;       /* fixed height */
+  box-sizing: border-box;
+}
+
+/* Testimonial 2 */
+#container-72893 {
+  height: 236px;       /* fixed height */
+  box-sizing: border-box;
+}
+
+/* Navigation */
+#row--29382 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* optional – keeps content vertically aligned */
+}
+
+/* Underline effect for headings */
+#tmp_headline1-73432 {
+  position: relative;
+}
+
+#tmp_headline1-73432:after {
+  content: '';
+  position: absolute;
+  bottom: -0.2em; /* adjust distance below text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;  /* image width */
+  height: 14px;  /* image height */
+  background: url('https://images.clickfunnels.com/9d/653946d538407e9a5b943f30048865/underline-yellow-1.png')
+  no-repeat center bottom;
+  background-size: contain;
+  z-index: -1; /* sits behind text */
+}
+
+/* Video Border */
+#tmp_video-44100 {
+  box-sizing: border-box;        /* includes border + padding in total width/height */
+  border: 8px solid #ffffff;     /* adjust thickness & color */
+  border-radius: 4px;            /* optional: rounded corners */
+}
+
+/* Main Headlines */
+h1, h2, h3,
+.headline, .elHeadline {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Subheadlines */
+h4, h5, h6,
+.subheadline, .elSubHeadline {
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Individual Card */
+.feature-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* Icon */
+.feature-card .icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* Body text, buttons, links, inputs */
+p, span, a, li, .elParagraph, .elButton, .elInput {
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+#tmp_headline1-73432 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+#tmp_subheadline-68897{
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.4rem !important;
+}
+
+#headline-29689{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 100 !important;
+
+}
+
+#headline-96954{
+  position: relative;
+  z-index: 2;
+  margin: -20px;
+}
+
+#row--65798 {
+  position: relative;
+  z-index: 0;
+  margin: -20px;
+}
+
+#headline-57536{
+  font-weight: 100 !important;
+}
+
+#tmp_image-75918 {
+  margin-top: -70px !important;
+}
+
+#section--14133 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--14133 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--14133 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#tmp_image-73482{
+  margin-top: -70px !important;
+}
+
+#headline-56115{
+  font-weight: 400 !important;
+}
+
+#section--48739 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--48739 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--48739 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#section--88025 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--88025 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--88025 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#section--86501 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--86501 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--86501 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+
+#row--12347 .col-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#row--12347 [id^='headline-']{
+  align-self:flex-start !important;
+  text-align:left !important;
+}
+
+#section--87204 .containerInner{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--87204 .container{
+  width: 100% !important;
+  max-width: 100% !important
+}
+
+#section--87204 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#col-center-left-106 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: left;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#row--20902 .col-inner {
+  min-height: 320px;
+}
+
+#row--10276 .col-inner{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center
+}
+
+#headline-77055{
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+#section--27558 .containerInner{
+  width: 100% !important;
+  max-width: 100%;
+}
+#section--34660 .containerInner{
+  width: 100% !important;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#row--60639 .col-inner{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center
+}
+
+#section-5894910000 .containerInner{
+  width: 100% !important;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#col-right-121 .col-inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#col-left-136 .col-inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-right-137 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-left-136-131 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-right-137-102 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+#col-full-127 .col-inner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Individual Card */
+.feature-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon + Headline Group */
+.feature-card .icon-headline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.feature-card .icon-headline h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  #row--15860-100 .col-md-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  #row--15860-100 .col-md-12 > .col-inner {
+    padding: 0 !important;
+  }
+}

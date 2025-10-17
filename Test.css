@@ -1,0 +1,74 @@
+/* Testimonial-1 Background-Image Animation */
+#section--48333 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  clip-path: inset(0);
+  position: relative;
+}
+
+/* Animated Background Layer */
+#section--48333::before {
+  content: '';
+  position: absolute;
+  top: -5%; /* Adjusted for better coverage */
+  left: -10%;
+  width: 120%; /* Increased to cover movement */
+  height: 150%; /* Increased to cover the tall section + movement */
+  background-image: url('https://images.clickfunnels.com/60/839904d1af4ea6a488a54a5da4ef9a/BGFlag.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: diagonalFloat 8s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+/* Keyframes for diagonal motion */
+@keyframes diagonalFloat {
+  0% {
+    transform: translate(0) scale(1.05);
+  }
+  25% {
+    transform: translate(-5%, -4%) scale(1.055);
+  }
+  50% {
+    transform: translateY(5%) scale(1.06);
+  }
+  75% {
+    transform: translate(5%, -3.5%) scale(1.055);
+  }
+  100% {
+    transform: translate(0) scale(1.05);
+  }
+}
+
+/* Mobile Responsive Fix */
+@media (min-width: 768px) {
+  #section--48333 {
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  #section--48333 {
+    height: auto;
+    overflow: hidden;
+    clip-path: inset(0);
+    position: relative;
+  }
+
+  #section--48333::before {
+    top: -10%;
+    left: -15%;
+    width: 150%; /* Increased for movement coverage */
+    height: 150%; /* Increased for taller mobile sections */
+    background-size: cover;
+    background-position: center;
+  }
+}

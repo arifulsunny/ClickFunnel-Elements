@@ -1,0 +1,33 @@
+/* Animated Hero Background */
+#containerName {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#containerName::before {
+    content: "";
+    position: absolute;
+    inset: -5%;
+    width: 110%;
+    height: 110%;
+    background: url('https://images.clickfunnels.com/1b/3057d6bbf34dd3a6e91a6a60c39ce3/hero-section-bg-flag.png') center/cover no-repeat;
+    animation: diagonalFloat 8s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes diagonalFloat {
+    0%, 50%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-45px, -40px);
+    }
+    75% {
+        transform: translate(35px, -40px);
+    }
+}
